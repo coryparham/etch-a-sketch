@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    min-height: 100%;
+    display: flex;
+}
+
+body {
+    min-height: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#user-inputs {
+    flex-grow: 0.5;
+    display: flex;
+    flex-direction: column;
+    height: 680px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#pixel-color {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+#pixel-color::-webkit-color-swatch {
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+}
+
+#pixel-color::-webkit-color-swatch-wrapper {
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+}
+
+#toggles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: 18px;
+}
+
+#toggles button {
+    padding: 12px 30px;
+    font-size: 18px;
+}
+
+.active {
+    background-color: black;
+    color: white;
+}
+
+#slider-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    width: 75%;
+    align-items: center;
+}
+
+#slider-div p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#slider {
+    width: 100%;
+}
+
+#container {
+    min-width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#device {
+    width: 780px;
+    height: 680px;
+    background-color: red;
+    opacity: 0.7;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#drawing-surface {
+    width: 480px;
+    height: 480px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 2%;
+}
+
+#title-div, #knobs {
+    flex-grow: 0.2;
+    background-color: red;
+    opacity: 0.7;
+}
+
+#title-div {
+    min-width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#knobs {
+    min-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 25%;
+}
+
+.knob {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: #dddddd;
+    border: 5px black solid;
+}

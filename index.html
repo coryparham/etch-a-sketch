@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="user-inputs">
+        <!-- Slider, Color Picker (Black vs. Rainbow), Opacity Increment Toggle in here -->
+        <div id="color-picker">
+            <input type="color" id="pixel-color" name ="pixel-color" value="#000000">
+        </div>    
+        <div id="toggles">
+            <button id="colorbtn" class>Color Mode</button>
+            <button id="rainbowbtn" class>Rainbow Mode</button>
+            <button id="opacitybtn" class>Shading Mode</button>
+            <button id="eraserbtn" class>Eraser</button>
+            <button id="clearbtn">Clear</button>
+        </div>
+        <div id="slider-div">
+            <p id="grid-size">16 x 16</p>
+            <input type="range" min="1" max="100" value="16" id="slider">
+        </div>
+    </div>
+    <div id="container">
+        <div id="device">
+            <div id="title-div">
+                <h1 id="title">Etch-a-Sketch</h1>
+            </div>
+            <div id="drawing-surface">
+                <!-- Grid in here. Dimensions from slider. Add class to divs depending on Color Picked and 
+                Opacity Toggle -->
+            </div>
+            <div id="knobs">
+                <div class="knob"></div>
+                <div id="clear-button"></div>
+                <div class="knob"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
