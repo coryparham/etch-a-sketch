@@ -12,8 +12,19 @@ body {
     min-height: 100%;
     flex: 1;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#main-container {
+    min-height: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: -50px;
 }
 
 #user-inputs {
@@ -137,4 +148,14 @@ body {
     border-radius: 100%;
     background-color: #dddddd;
     border: 5px black solid;
+}
+
+#footer {
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 24px 0;
+    width: 100%;
+    text-align: center;
 }
